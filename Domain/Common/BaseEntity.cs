@@ -1,11 +1,10 @@
 ﻿using System;
 namespace Domain.Common
 {
-	public class BaseEntity
+	public abstract class BaseEntity
 	{
-		public BaseEntity()
-		{
-		}
+		// The Id is a common field so it can be reuseable
+		public virtual Guid Id { get; set; }
 	}
 }
 
